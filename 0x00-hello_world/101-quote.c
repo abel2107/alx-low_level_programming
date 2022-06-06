@@ -1,14 +1,12 @@
-#include <stdio.h>
-#include <unistd.h>
-
+#include<stdio.h>
 /**
- * main - Entry point
- * Return: Always 1
- *
+ * main - it starts the program
+ * pritnts the file to standard error using fprintf
+ * Return: 1 when finished
  */
-
 int main(void)
 {
-write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);	
-return (1);
+	fprintf(stderr, "and that piece of art is useful\"");
+	fprintf(stderr, " - Dora Korpar, 2015-10-19\n");
+	return (1);
 }
